@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>plusvibe</title>
+</head>
+
+<body>
+    <div class="main outer">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">
+                    <img src="_blocks/_main/star.svg" alt="" class="star">
+                </div>
+                <div class="header__nav">
+                    <div class="menu" id="menu">
+                        <li><a href="#accordion-block" class="menu-item">АККОРДЕОН</a></li>
+                        <li><a href="#slider-block" class="menu-item">СЛАЙДЕР</a></li>
+                        <li><a href="#filter-block" class="menu-item">ФИЛЬТРЫ</a></li>
+                        <li><a href="#tabs-block" class="menu-item">ТАБЫ</a></li>
+                    </div>
+                    <div class="hamb-filed" id="hamb">
+                        <i class="fa-duotone fa-bars"></i>
+                    </div>
+                </div>
+
+                <button type="button" class="open-modal__btn" id="open-modal__btn">
+                    ПОДПИСАТЬСЯ
+                </button>
+                <div id="modal" class="modal">
+                    <div class="modal_content">
+                        <span class="modal__close">
+                            &times;
+                        </span>
+                        <h1>А вот не на что подписываться, представляете?(</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup"></div>
+            <div class="main-heading">
+                <h1>На этой страничке<br />
+                    очень красиво</h1>
+                <h2>классно, что ты тут)</h2>
+            </div>
+            <div class="main-image">
+                <img src="_blocks/_main/girl.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-block outer" id="accordion-block">
+        <div class="container">
+            <div class="accordion">
+                <div class="accordion-head" id="accordion-head">
+                    <img src="_blocks/_accordion-block/star.svg" alt="">
+                    <h1>Сюда очень надо нажать</h1>
+                    <button type="button" alt="" class="accordion-open_btn" id="accordion-open_btn">
+                        <img src="_blocks/_accordion-block/arrow.svg" alt="">
+                    </button>
+                </div>
+                <div class="accordion-content" id="accordion-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid quae illum doloribus
+                        officiis eos dolorem debitis similique, voluptatibus sint totam nam molestias ducimus hic,
+                        officia magnam ullam facilis unde.</p>
+                </div>
+                <div class="accordion-head" id="accordion-head">
+                    <img src="_blocks/_accordion-block/star.svg" alt="">
+                    <h1>А ещё сюда</h1>
+                    <button type="button" alt="" class="accordion-open_btn" id="accordion-open_btn">
+                        <img src="_blocks/_accordion-block/arrow.svg" alt="">
+                    </button>
+                </div>
+                <div class="accordion-content" id="accordion-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid quae illum doloribus
+                        officiis eos dolorem debitis similique, voluptatibus sint totam nam molestias ducimus hic,
+                        officia magnam ullam facilis unde.</p>
+                </div>
+                <div class="accordion-head" id="accordion-head">
+                    <img src="_blocks/_accordion-block/star.svg" alt="">
+                    <h1>И сюда напоследок</h1>
+                    <button type="button" alt="" class="accordion-open_btn" id="accordion-open_btn">
+                        <img src="_blocks/_accordion-block/arrow.svg" alt="">
+                    </button>
+                </div>
+                <div class="accordion-content" id="accordion-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquid quae illum doloribus
+                        officiis eos dolorem debitis similique, voluptatibus sint totam nam molestias ducimus hic,
+                        officia magnam ullam facilis unde.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-block outer" id="slider-block">
+        <div class="container">
+            <div class="slider-heading">
+                <h1>какая картинка тебе нравится больше?</h1>
+            </div>
+            <div class="slider" id="slider">
+                <div class="wrap">
+                    <div class="slider-item fade">
+                        <img src="_blocks/_slider-block/pic1.png" alt="">
+                    </div>
+                    <div class="slider-item fade">
+                        <img src="_blocks/_slider-block/pic2.png" alt="">
+                    </div>
+                    <div class="slider-item fade">
+                        <img src="_blocks/_slider-block/pic3.png" alt="">
+                    </div>
+                    <div class="slider-item fade">
+                        <img src="_blocks/_slider-block/pic4.png" alt="">
+                    </div>
+                    <div class="slider-item fade">
+                        <img src="_blocks/_slider-block/pic5.png" alt="">
+                    </div>
+                    <div class="slider-item fade">
+                        <img src="_blocks/_slider-block/pic6.png" alt="">
+                    </div>
+                    <div class="prev"><img src="_blocks/_slider-block/star.png" alt=""></div>
+                    <div class="next"><img src="_blocks/_slider-block/star.png" alt=""></div>
+                </div>
+                <div class="slider-dots">
+                    <div class="dot dot-active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot dot-active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filter-block outer" id="filter-block">
+        <div class="container">
+            <div class="filter">
+                <div class="filter-title">
+                    <h1>Фильтры по цветам:</h1>
+                    <div class="filter-btn" data-filter="1">
+                        <img src="_blocks/_filter-block/star1.svg" alt="">
+                    </div>
+                    <div class="filter-btn" data-filter="2">
+                        <img src="_blocks/_filter-block/star2.svg" alt="">
+                    </div>
+                    <div class="filter-btn" data-filter="3">
+                        <img src="_blocks/_filter-block/star3.svg" alt="">
+                    </div>
+                </div>
+                <div class="filter-content">
+                    <img src="_blocks/_filter-block/pic1.png" alt="" class="filter-item" data-item="1">
+                    <img src="_blocks/_filter-block/pic2.png" alt="" class="filter-item" data-item="2">
+                    <img src="_blocks/_filter-block/pic3.png" alt="" class="filter-item" data-item="3">
+                    <img src="_blocks/_filter-block/pic4.png" alt="" class="filter-item" data-item="4">
+                    <img src="_blocks/_filter-block/pic5.png" alt="" class="filter-item" data-item="5">
+                    <img src="_blocks/_filter-block/pic6.png" alt="" class="filter-item" data-item="6">
+                    <img src="_blocks/_filter-block/pic7.png" alt="" class="filter-item" data-item="7">
+                    <img src="_blocks/_filter-block/pic8.png" alt="" class="filter-item" data-item="8">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs-block outer" id="tabs-block">
+        <div class="container">
+            <div class="info" id="info">
+                <div class="info-header">
+                    <div id="tab" class="info-header-tab">Тык 1</div>
+                    <div id="tab" class="info-header-tab">Тык 2</div>
+                    <div id="tab" class="info-header-tab">Тык 3</div>
+                </div>
+                <div class="info-tabcontent" id="tab-content">
+                    <img src="_blocks/_tabs-block/pic1.png" alt="">
+                </div>
+                <div class="info-tabcontent hidden" id="tab-content">
+                    <img src="_blocks/_tabs-block/pic2.png" alt="">
+                </div>
+                <div class="info-tabcontent hidden" id="tab-content">
+                    <img src="_blocks/_tabs-block/pic3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer outer"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>

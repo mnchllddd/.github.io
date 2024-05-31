@@ -1,0 +1,18 @@
+//Base
+@import "../_base/base",
+"../_base/mixins",
+"../_base/reset",
+"../_base/vars";
+
+//Blocks
+@import "../_blocks/_main/main",
+"../_blocks/_accordion-block/accordion",
+"../_blocks/_slider-block/slider",
+"../_blocks/_filter-block/filter",
+"../_blocks/_tabs-block/tabs",
+"../_blocks/_footer/footer";
+//Fonts
+@font-face {
+    font-family: margot;
+    src: url(../fonts/ofont.ru_Margot\ Small\ Capitals.ttf);
+}

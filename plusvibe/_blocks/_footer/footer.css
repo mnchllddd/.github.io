@@ -1,0 +1,27 @@
+.footer {
+  background-image: url(../_footer/footer-pic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+}
+@media (min-width: 1440px) {
+  .footer {
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439.98px) {
+  .footer {
+    height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .footer {
+    height: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer {
+    height: 50px;
+  }
+}/*# sourceMappingURL=footer.css.map */

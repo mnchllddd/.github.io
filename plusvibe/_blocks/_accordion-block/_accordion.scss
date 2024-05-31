@@ -1,0 +1,88 @@
+.accordion-block{
+    background-image: url(../../_blocks/_accordion-block/background.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .accordion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+
+        .accordion-head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $bg-color;
+            padding: 15px;
+            width: 600px;
+            border-radius: 100px;
+
+
+            h1{
+                color: white;
+                font-size: 24px;
+
+                @media (min-width: 1439.98px) {
+                    font-size: 36px;
+                }
+    
+                @media (max-width: 767.98px){
+                    font-size: 20px;
+                }
+            }
+
+            @media (min-width: 1439.98px) {
+                width: 800px;
+            }
+
+            @media (max-width: 767.98px){
+                width: 350px;
+            }
+
+            .accordion-open_btn{
+                display: flex;
+                background-color: rgba($color: #000000, $alpha: 0);
+            }
+        }
+
+        .accordion-content{
+            display: none;
+            font-size: 24px;
+            color: $bg-color;
+            background-color: white;
+            width: 600px;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: -15px;
+
+            @media (min-width: 1439.98px) {
+                width: 800px;
+            }
+
+            @media (max-width: 767.98px){
+                width: 350px;
+            }
+        }
+
+        .accordion-head.active-p + .accordion-content{
+            display: block;
+        }
+
+        .accordion-head.active-style{
+            .accordion-open_btn{
+                transform: rotate(90deg);
+                margin-right: 15px;
+            }
+        }
+    }
+}
